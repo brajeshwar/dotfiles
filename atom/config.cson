@@ -1,0 +1,46 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    audioBeep: false
+    themes: [
+      "atom-dark-ui"
+      "ciku-syntax"
+    ]
+    projectHome: "/Users/brajeshwar/dev"
+    disabledPackages: [
+      "markdown-preview"
+    ]
+    ignoredNames: [
+      ".DS_Store"
+      ".git"
+      ".hg"
+      ".sass-cache"
+      ".svn"
+      "Icon?"
+      "Thumbs.db"
+      "ehthumbs.db"
+      "node_modules"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Source Code Pro"
+    showIndentGuide: true
+    preferredLineLength: 100
+    fontSize: 15
+    lineHeight: 1.6
+    scrollPastEnd: true
+    scrollSensitivity: 50
+  "tree-view":
+    hideIgnoredNames: true
+  "highlight-line":
+    hideHighlightOnSelect: true
+  tabs:
+    usePreviewTabs: true
+  "aligner-scss":
+    ":-leftSpace": true
+  aligner:
+    ":-leftSpace": true
+    ":-alignment": "left"
+  "exception-reporting":
+    userId: "85cf381a-5bfc-7db7-27f0-ebb617305779"

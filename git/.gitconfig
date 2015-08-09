@@ -1,0 +1,109 @@
+# Git Config
+# Jul 01, 2015
+
+[user]
+	name = Brajeshwar Oinam
+	email = brajeshwar@gmail.com
+
+[core]
+# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
+  whitespace = space-before-tab,indent-with-non-tab,trailing-space
+  editor = atom -n -w
+
+[alias]
+  a           = add --all :/
+  ad          = add --all .
+  ap          = add --patch
+  s           = status -s -b
+  c           = commit -m
+  caa         = commit -a --amend -C HEAD # Put whatever I've done into the previous commit
+  amend       = commit --amend -C HEAD
+  undo        = reset --soft HEAD^
+  fo          = fetch origin
+  co          = checkout
+  lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+  pushall     = !git remote | xargs -n1 git push
+  pushalltags = !git remote | xargs -n1 git push --tags
+  pulld       = pull origin dev
+  pushd       = push origin dev
+  pullm       = pull origin master
+  pushm       = push origin master
+
+[push]
+  default = simple
+
+[color]
+  ui = auto
+
+[color "branch"]
+  current = red
+  local = green
+  remote = blue
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[merge]
+  stat = true
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
+  tool = Kaleidoscope
+
+[mergetool]
+  keepBackup = true
+
+# Use `origin` as the default remote on the `master` branch in all cases
+  prompt = false
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+
+[github]
+  user = brajeshwar
+
+[branch]
+  # autosetup rebase so that pulls rebase by default
+  # autosetuprebase = always
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+
+
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
