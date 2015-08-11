@@ -23,7 +23,7 @@
   caa         = commit -a --amend -C HEAD # Put whatever I've done into the previous commit
   amend       = commit --amend -C HEAD
   undo        = reset --soft HEAD^
-  fo          = fetch origin
+  fo          = fetch origin --prune
   co          = checkout
   lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
   pushall     = !git remote | xargs -n1 git push
@@ -32,6 +32,7 @@
   pushd       = push origin dev
   pullm       = pull origin master
   pushm       = push origin master
+	ignored	    = !git ls-files -v | grep "^[[:lower:]]"
 
 [push]
   default = simple
