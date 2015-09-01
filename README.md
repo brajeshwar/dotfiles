@@ -2,6 +2,12 @@
 
 > Well, the thing those awesome people do these days. I'm following them.
 
+### How to Symlink
+
+```
+$ ln -s /path/to/file /path/to/symlink
+```
+
 ## Setup Script
 
 Run this:

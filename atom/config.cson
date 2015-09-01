@@ -7,7 +7,7 @@
       "atom-dark-ui"
       "ciku-syntax"
     ]
-    projectHome: "/Users/brajeshwar/dev"
+    projectHome: "/Users/brajeshwar/dev/jpmc"
     disabledPackages: [
       "markdown-preview"
     ]
@@ -24,7 +24,7 @@
     ]
   editor:
     invisibles: {}
-    fontFamily: "Source Code Pro"
+    fontFamily: "Hack"
     showIndentGuide: true
     preferredLineLength: 100
     fontSize: 15
@@ -33,6 +33,7 @@
     scrollSensitivity: 50
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "highlight-line":
     hideHighlightOnSelect: true
   tabs:

@@ -56,6 +56,9 @@ plugins=(git)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/brajeshwar/tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Git-Radar, https://github.com/michaeldfallen/git-radar
+export PROMPT="$PROMPT\$(git-radar --zsh --fetch) "
+
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix nvm)/nvm.sh
 
