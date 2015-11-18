@@ -53,14 +53,10 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/brajeshwar/tools"
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/brajeshwar/tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# Git-Radar, https://github.com/michaeldfallen/git-radar
-export PROMPT="$PROMPT\$(git-radar --zsh --fetch) "
-
 source $ZSH/oh-my-zsh.sh
-source $(brew --prefix nvm)/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,6 +74,11 @@ source $(brew --prefix nvm)/nvm.sh
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
+# NVM, Node and NPM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # NVM
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -86,3 +87,10 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$PATH:/usr/local/share/npm/bin
+
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="/Users/brajeshwar/.sdkman"
+# [[ -s "/Users/brajeshwar/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/brajeshwar/.sdkman/bin/sdkman-init.sh"

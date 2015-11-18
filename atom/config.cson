@@ -7,7 +7,7 @@
       "atom-dark-ui"
       "ciku-syntax"
     ]
-    projectHome: "/Users/brajeshwar/dev/jpmc"
+    projectHome: "/Users/brajeshwar/dev"
     disabledPackages: [
       "markdown-preview"
     ]
@@ -20,8 +20,8 @@
       "Icon?"
       "Thumbs.db"
       "ehthumbs.db"
-      "node_modules"
     ]
+    openEmptyEditorOnStart: false
   editor:
     invisibles: {}
     fontFamily: "Hack"
@@ -31,6 +31,7 @@
     lineHeight: 1.6
     scrollPastEnd: true
     scrollSensitivity: 50
+    backUpBeforeSaving: true
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true

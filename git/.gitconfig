@@ -12,7 +12,7 @@
 
 # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
-  editor = atom -n -w
+  editor = sublime -n -w
 
 [alias]
   a           = add --all :/
@@ -28,9 +28,9 @@
   lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
   pushall     = !git remote | xargs -n1 git push
   pushalltags = !git remote | xargs -n1 git push --tags
-  pulld       = pull origin dev
+  pulld       = pull --rebase origin dev
   pushd       = push origin dev
-  pullm       = pull origin master
+  pullm       = pull --rebase origin master
   pushm       = push origin master
 	ignored	    = !git ls-files -v | grep "^[[:lower:]]"
 
@@ -100,7 +100,7 @@
 	tool = Kaleidoscope
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
