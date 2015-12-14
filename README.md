@@ -8,15 +8,10 @@
 $ ln -s /path/to/file /path/to/symlink
 ```
 
-## Setup Script
+## Stow
 
-Run this:
+GNU [Stow](https://www.gnu.org/software/stow/) is a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.
 
-```sh
-git clone https://github.com/brajeshwar/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-chmod +x init.sh
-./init.sh
-```
+### How to manage dotfiles with Stow
 
-_More scripts are in 'script' folder._
+[TBD]
