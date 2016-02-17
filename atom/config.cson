@@ -1,13 +1,13 @@
 "*":
-  welcome:
-    showOnStartup: false
+  aligner:
+    ":-alignment": "left"
+    ":-leftSpace": true
+  "aligner-scss":
+    ":-leftSpace": true
+  "atom-beautify":
+    _analyticsUserId: "60940952-5525-44d7-9073-89321f7b4368"
   core:
     audioBeep: false
-    themes: [
-      "atom-dark-ui"
-      "ciku-syntax"
-    ]
-    projectHome: "/Users/brajeshwar/dev"
     disabledPackages: [
       "markdown-preview"
     ]
@@ -22,29 +22,29 @@
       "ehthumbs.db"
     ]
     openEmptyEditorOnStart: false
+    projectHome: "/Users/brajeshwar/dev"
+    themes: [
+      "atom-dark-ui"
+      "ciku-syntax"
+    ]
   editor:
-    invisibles: {}
+    backUpBeforeSaving: true
     fontFamily: "Hack"
-    showIndentGuide: true
-    preferredLineLength: 100
     fontSize: 15
+    invisibles: {}
     lineHeight: 1.6
+    preferredLineLength: 100
     scrollPastEnd: true
     scrollSensitivity: 50
-    backUpBeforeSaving: true
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "85cf381a-5bfc-7db7-27f0-ebb617305779"
   "highlight-line":
     hideHighlightOnSelect: true
   tabs:
     usePreviewTabs: true
-  "aligner-scss":
-    ":-leftSpace": true
-  aligner:
-    ":-leftSpace": true
-    ":-alignment": "left"
-  "exception-reporting":
-    userId: "85cf381a-5bfc-7db7-27f0-ebb617305779"
-  "atom-beautify":
-    _analyticsUserId: "60940952-5525-44d7-9073-89321f7b4368"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
