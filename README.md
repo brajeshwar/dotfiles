@@ -2,7 +2,7 @@
 
 > Well, the thing those awesome people do these days. I'm following them.
 
-### How to Symlink
+### How to Symlink (deprecated)
 
 ```
 $ ln -s /path/to/file /path/to/symlink
@@ -12,8 +12,11 @@ $ ln -s /path/to/file /path/to/symlink
 
 GNU [Stow](https://www.gnu.org/software/stow/) is a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.
 
-Read the article - [Using GNU Stow to manage your dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html).
-
 ### How to manage dotfiles with Stow
 
-[TBD]
+Symlink with Stow.
+From the `dotfiles` folder,
+`$ stow <lib>`
+
+Example
+`$ stow bash`
