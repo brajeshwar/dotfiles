@@ -1,5 +1,7 @@
 # dotfiles
 
+https://github.com/brajeshwar/dotfiles
+
 > Well, the thing those awesome people do these days. I'm following them.
 
 ### How to Symlink
@@ -15,8 +17,11 @@ GNU [Stow](https://www.gnu.org/software/stow/) is a symlink farm manager which t
 ### How to manage dotfiles with Stow
 
 Symlink with Stow.
+
 From the `dotfiles` folder,
+
 `$ stow <lib>`
 
 Example
+
 `$ stow bash`
