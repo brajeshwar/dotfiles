@@ -1,16 +1,18 @@
 # Git Config
-# Jul 01, 2015
+# Late Update: Jul 03, 2017
 
 [user]
 	name = Brajeshwar Oinam
-	email = brajeshwar@gmail.com
+	email = brajeshwar@oinam.com
 
 [core]
 # Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/brajeshwar/.gitignore_global
   attributesfile = ~/.gitattributes
 
-# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
+# Treat spaces before tabs, lines that are indented with 8 or more spaces,
+# and all kinds of trailing whitespace as an error
+
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
   editor = sublime -n -w
 
@@ -60,7 +62,6 @@
   stat = true
   # Include summaries of merged commits in newly created merge commit messages
   log = true
-  tool = Kaleidoscope
 
 [mergetool]
   keepBackup = true
@@ -74,37 +75,9 @@
 
 [github]
   user = brajeshwar
-
-[branch]
-  # autosetup rebase so that pulls rebase by default
-  # autosetuprebase = always
-
-[filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-
-
-[filter "hawser"]
-  clean = git hawser clean %f
-  smudge = git hawser smudge %f
-  required = true
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true

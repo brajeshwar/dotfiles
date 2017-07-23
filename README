@@ -16,7 +16,7 @@ GNU [Stow](https://www.gnu.org/software/stow/) is a symlink farm manager which t
 
 ### How to manage dotfiles with Stow
 
-Symlink with Stow.
+## Symlink with Stow.
 
 From the `dotfiles` folder,
 
