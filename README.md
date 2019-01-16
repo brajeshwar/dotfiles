@@ -2,7 +2,7 @@
 
 https://github.com/brajeshwar/dotfiles
 
-> Well, the thing those awesome people do these days. I'm following them.
+> Well, the thing those awesome people do. I love following and learning from awesome people.
 
 ### How to Symlink
 
@@ -25,3 +25,7 @@ From the `dotfiles` folder,
 Example
 
 `$ stow bash`
+
+## References
+
+* [Awesome dotfiles](https://project-awesome.org/webpro/awesome-dotfiles)

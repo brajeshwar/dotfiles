@@ -1,3 +1,4 @@
+# PATH
 export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/brajeshwar/tools"
 
 # You may need to manually set your language environment
@@ -13,6 +14,8 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
 
-# Prompt
+# Aliases
+alias brewup='brew update; brew upgrade; brew cleanup; brew cleanup; brew doctor'
 
+# Prompt
 PROMPT='%{%F{red}%}%~ %{%F{yellow}%}% → %{%F{reset_color}%}%'

@@ -5,6 +5,15 @@
 	name = Brajeshwar Oinam
 	email = brajeshwar@oinam.com
 
+[github]
+  user = brajeshwar
+
+[bitbucket]
+  user = oinam
+
+[credential]
+    helper = osxkeychain
+
 [core]
 # Use custom `.gitignore` and `.gitattributes`
 	excludesfile = /Users/brajeshwar/.gitignore_global
