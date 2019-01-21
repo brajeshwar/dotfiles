@@ -1,12 +1,15 @@
 # Git Config
-# Late Update: Jul 03, 2017
+# Late Update: Jan 21, 2019
+
+[include]
+  path = ~/.gitconfig_local
 
 [user]
 	name = Brajeshwar Oinam
 	email = brajeshwar@oinam.com
 
 [github]
-  user = brajeshwar
+  user = Brajeshwar
 
 [bitbucket]
   user = oinam
@@ -16,7 +19,7 @@
 
 [core]
 # Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/brajeshwar/.gitignore_global
+	excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
 
 # Treat spaces before tabs, lines that are indented with 8 or more spaces,
