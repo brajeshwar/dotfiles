@@ -11,6 +11,9 @@
 [github]
   user = Brajeshwar
 
+[url "git@github.com:"]
+  insteadOf = "https://github.com/"
+
 [bitbucket]
   user = oinam
 
@@ -25,8 +28,8 @@
 # Treat spaces before tabs, lines that are indented with 8 or more spaces,
 # and all kinds of trailing whitespace as an error
 
-  whitespace = space-before-tab,indent-with-non-tab,trailing-space
-  editor = sublime -n -w
+whitespace = space-before-tab,indent-with-non-tab,trailing-space
+editor = sublime -n -w
 
 [alias]
   a           = add --all :/
@@ -85,11 +88,9 @@
   remote = origin
   merge = refs/heads/master
 
-[github]
-  user = brajeshwar
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[http]
+	sslVerify = false
+  proxy = false
+
+[https]
+  proxy = false

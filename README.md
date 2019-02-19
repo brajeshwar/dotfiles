@@ -7,7 +7,7 @@ https://github.com/brajeshwar/dotfiles
 ### How to Symlink
 
 ```
-$ ln -s /path/to/file /path/to/symlink
+$ ln -s /path/to/original-file /path/to/symlink
 ```
 
 ## Stow

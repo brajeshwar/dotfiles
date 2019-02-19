@@ -1,5 +1,5 @@
 # PATH
-export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Brajeshwar/tools"
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
