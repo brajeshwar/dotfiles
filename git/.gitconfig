@@ -18,7 +18,7 @@
   user = oinam
 
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
 
 [core]
 # Use custom `.gitignore` and `.gitattributes`
@@ -94,3 +94,13 @@ editor = sublime -n -w
 
 [https]
   proxy = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+# Mobisy
+[includeIf "gitdir:~/Mobisy/"]
+  path = ~/Mobisy/__dot/.gitconfig
