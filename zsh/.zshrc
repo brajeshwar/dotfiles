@@ -90,3 +90,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# Local auto-reload server with BrowserSync
+# https://medium.com/@svinkle/start-a-local-live-reload-web-server-with-one-command-72f99bc6e855
+export LOCAL_IP=`ipconfig getifaddr en0`
+alias server="browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000"

@@ -102,5 +102,5 @@ editor = sublime -n -w
 	trustExitCode = true
 
 # Mobisy
-[includeIf "gitdir:~/Mobisy/"]
-  path = ~/Mobisy/__dot/.gitconfig
+[includeIf "gitdir:~/dev/"]
+  path = ~/dev/mobisy.dot/.gitconfig
