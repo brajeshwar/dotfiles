@@ -32,24 +32,22 @@ whitespace = space-before-tab,indent-with-non-tab,trailing-space
 editor = sublime -n -w
 
 [alias]
-  a           = add --all :/
-  ad          = add --all .
+  amend       = !git add -A && git commit --amend --no-edit
   ap          = add --patch
-  s           = status -s -b
-  c           = commit -m
+  c           = "!git add -A && git commit -m "
   caa         = commit -a --amend -C HEAD # Put whatever I've done into the previous commit
-  amend       = commit --amend -C HEAD
-  undo        = reset --soft HEAD^
-  fo          = fetch origin --prune
   co          = checkout
+  fo          = fetch origin --prune
+  ignored     = !git ls-files -v | grep "^[[:lower:]]"
   lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+  pulld       = pull --rebase origin dev
+  pullm       = pull --rebase origin master
   pushall     = !git remote | xargs -n1 git push
   pushalltags = !git remote | xargs -n1 git push --tags
-  pulld       = pull --rebase origin dev
   pushd       = push origin dev
-  pullm       = pull --rebase origin master
   pushm       = push origin master
-	ignored	    = !git ls-files -v | grep "^[[:lower:]]"
+  s           = status -s -b
+  undo        = reset --soft HEAD^
 
 [push]
   default = simple
