@@ -1,5 +1,5 @@
 # Git Config
-# Late Update: Jan 21, 2019
+# Late Update: May 18, 2020
 
 [include]
   path = ~/.gitconfig_local
@@ -85,7 +85,3 @@ editor = sublime -n -w
 [branch "master"]
   remote = origin
   merge = refs/heads/master
-
-[http]
-	sslVerify = false
-  proxy = false
