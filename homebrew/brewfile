@@ -1,9 +1,0 @@
-tap 'caskroom/cask'
-
-brew 'git'
-brew 'npm'
-
-cask 'google-chrome'
-cask 'mamp'
-cask 'spectacle'
-cask 'vlc'

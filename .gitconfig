@@ -11,18 +11,18 @@
 [github]
   user = Brajeshwar
 
+[gitlab]
+  user = brajeshwar
+
 [url "git@github.com:"]
   insteadOf = "https://github.com/"
-
-[bitbucket]
-  user = oinam
 
 [credential]
   helper = osxkeychain
 
 [core]
-# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore_global
+  editor = "sublime"
+	excludesfile = /Users/brajeshwar/.gitignore_global
   attributesfile = ~/.gitattributes
 
 # Treat spaces before tabs, lines that are indented with 8 or more spaces,
@@ -41,11 +41,13 @@ editor = sublime -n -w
   ignored     = !git ls-files -v | grep "^[[:lower:]]"
   lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
   pulld       = pull --rebase origin dev
-  pullm       = pull --rebase origin master
+  pullm       = pull --rebase origin main
+  pullma      = pull --rebase origin master
   pushall     = !git remote | xargs -n1 git push
   pushalltags = !git remote | xargs -n1 git push --tags
   pushd       = push origin dev
-  pushm       = push origin master
+  pushm       = push origin main
+  pushma      = push origin master
   s           = status -s -b
   undo        = reset --soft HEAD^
 
@@ -82,6 +84,11 @@ editor = sublime -n -w
 # Use `origin` as the default remote on the `master` branch in all cases
   prompt = false
 
-[branch "master"]
+[branch "main"]
   remote = origin
-  merge = refs/heads/master
+  merge = refs/heads/main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

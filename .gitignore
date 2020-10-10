@@ -1,9 +1,18 @@
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #
 .*/
 
 # Ignore OS generated files #
+.AppleDouble
 .DS_Store*
+.LSOverride
 ehthumbs.db
 Icon?
 Thumbs.db

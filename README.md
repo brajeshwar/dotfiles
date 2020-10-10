@@ -1,35 +1,12 @@
 # dotfiles
 
-https://github.com/brajeshwar/dotfiles
+## Symlink
 
-> Well, the thing those awesome people do. I love following and learning from awesome people.
+`$ ln -s /path-to-file /path-to-symlink`
+e.g
+`$ ln -s ~/dotfiles/.gitignore ~/.gitignore`
 
-### How to Symlink
 
-```
-$ ln -s /path/to/original-file /path/to/symlink
-```
+### References
 
-## Stow
-
-GNU [Stow](https://www.gnu.org/software/stow/) is a symlink farm manager which takes distinct packages of software and/or data located in separate directories on the filesystem, and makes them appear to be installed in the same place.
-
-### How to manage dotfiles with Stow
-
-## Symlink with Stow.
-
-From the `dotfiles` folder,
-
-`$ stow <lib>`
-
-Example
-
-`$ stow bash`
-
-## References
-
-* [Awesome dotfiles](https://project-awesome.org/webpro/awesome-dotfiles)
-
-## T0D0
-
-- Have a look at https://yadm.io/
+- [Github Dotfiles](https://dotfiles.github.io/)
