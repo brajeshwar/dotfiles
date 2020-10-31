@@ -9,7 +9,7 @@ export PATH
 
 # Aliases
 # References
-# - https://thorsten-hans.com/5-types-of-zsh-aliases
+# https://thorsten-hans.com/5-types-of-zsh-aliases
 alias brewup='brew update; brew upgrade; brew cleanup; brew cleanup; brew doctor'
 
 if [[ $OSTYPE == darwin* ]]; then
@@ -21,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Prompt
-PROMPT='%{%F{red}%}%~ %{%F{yellow}%}% › %{%F{reset_color}%}%'
+# PROMPT='%{%F{red}%}%~ %{%F{yellow}%}% › %{%F{reset_color}%}%'
 
 # Starship Colorize, https://starship.rs
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"

@@ -9,7 +9,7 @@
 	email = brajeshwar@oinam.com
 
 [github]
-  user = Brajeshwar
+  user = brajeshwar
 
 [gitlab]
   user = brajeshwar
@@ -33,19 +33,17 @@ editor = sublime -n -w
 
 [alias]
   amend       = !git add -A && git commit --amend --no-edit
-  ap          = add --patch
   c           = "!git add -A && git commit -m "
   caa         = commit -a --amend -C HEAD # Put whatever I've done into the previous commit
   co          = checkout
+  del         = rm $(git ls-files --deleted) # Remove deleted files from Git
   fo          = fetch origin --prune
   ignored     = !git ls-files -v | grep "^[[:lower:]]"
   lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
-  pulld       = pull --rebase origin dev
   pullm       = pull --rebase origin main
   pullma      = pull --rebase origin master
   pushall     = !git remote | xargs -n1 git push
   pushalltags = !git remote | xargs -n1 git push --tags
-  pushd       = push origin dev
   pushm       = push origin main
   pushma      = push origin master
   s           = status -s -b

@@ -7,8 +7,3 @@
 e.g
 
 `$ ln -s ~/dotfiles/.gitignore ~/.gitignore`
-
-
-### References
-
-- [Github Dotfiles](https://dotfiles.github.io/)
