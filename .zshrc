@@ -1,11 +1,11 @@
 export LANG=en_US.UTF-8
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-path=('/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin' $path)
+path=('/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:~/Dropbox/tools' $path)
 export PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Aliases
 # References
@@ -21,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Prompt
-# PROMPT='%{%F{red}%}%~ %{%F{yellow}%}% › %{%F{reset_color}%}%'
+PROMPT='%{%F{red}%}%~ %{%F{yellow}%}% › %{%F{reset_color}%}%'
 
 # Starship Colorize, https://starship.rs
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"

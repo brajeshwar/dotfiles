@@ -5,4 +5,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # RVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # NVM
 
 # Starship Colorize, https://starship.rs
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
